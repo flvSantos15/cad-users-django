@@ -3,5 +3,8 @@ from app_cad_usuarios import views
 
 urlpatterns = [
     # rota, view responsavel, nome de referencia
-    path('', views.home, name='home')
+    # usuarios.com
+    path('', views.home, name='home'),
+    # usuarios.com/cadastro
+    path('usuarios/', views.usuarios, name='listagem_usuarios')
 ]
